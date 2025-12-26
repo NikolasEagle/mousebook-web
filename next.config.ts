@@ -6,11 +6,11 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/auth/:path*",
-        destination: `http://${process.env.NEXT_PUBLIC_HOST_SERVER_AUTH}:${process.env.NEXT_PUBLIC_PORT_SERVER_AUTH}/:path*`,
+        destination: `http://localhost:8001/:path*`,
       },
       {
         source: "/api/:path*",
-        destination: `http://${process.env.NEXT_PUBLIC_SERVER_API_HOST}:${process.env.NEXT_PUBLIC_SERVER_API_PORT}/:path*`,
+        destination: `http://localhost:8002/:path*`,
       },
     ];
   },
