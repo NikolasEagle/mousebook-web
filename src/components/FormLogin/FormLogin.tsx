@@ -10,7 +10,7 @@ import Download from "../Download/Download";
 import { useDispatch, useSelector } from "react-redux";
 import { SET_LOADING, StateLogin } from "@/lib/features/login/loginSlice";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function FormLogin() {
   const router = useRouter();
