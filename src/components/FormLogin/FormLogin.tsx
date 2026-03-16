@@ -79,9 +79,9 @@ export default function FormLogin() {
         />
         <button type="submit">Вход</button>
       </Form>
-      <Link className={styles.linkToRegister} href={"/register"}>
+      {/*<Link className={styles.linkToRegister} href={"/register"}>
         Регистрация
-      </Link>
+      </Link>*/}
       <ErrorMessage message={message} />
     </div>
   );
