@@ -12,7 +12,23 @@ workflow:
         - "src/**/*"
         - "Dockerfile"
         - "next.config.ts"
+        - ".dockerignore"
       when: always
+    - if: $CI_COMMIT_BRANCH == "main"
+      changes:
+        - ".github/**/*"
+        - "docs/**/*"
+        - "node_modules/**/*"
+        - "public/**/*"
+        - ".gitignore"
+        - ".gitlab-ci.yml"
+        - "eslint.config.mjs"
+        - "LICENSE"
+        - "package-lock.json"
+        - "package.json"
+        - "README.md"
+        - "tsconfig.json"
+      when: never
     - if: $CI_COMMIT_BRANCH == "main"
       when: always
     - when: never
