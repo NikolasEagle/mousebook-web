@@ -10,7 +10,7 @@ import Download from "../Download/Download";
 import { useDispatch, useSelector } from "react-redux";
 import { SET_LOADING, StateLogin } from "@/lib/features/login/loginSlice";
 import { useRouter } from "next/navigation";
-// import Link from "next/link";
+import Link from "next/link";
 
 export default function FormLogin() {
   const router = useRouter();
@@ -79,9 +79,9 @@ export default function FormLogin() {
         />
         <button type="submit">Вход</button>
       </Form>
-      {/*<Link className={styles.linkToRegister} href={"/register"}>
+      <Link className={styles.linkToRegister} href={"/register"}>
         Регистрация
-      </Link>*/}
+      </Link>
       <ErrorMessage message={message} />
     </div>
   );
